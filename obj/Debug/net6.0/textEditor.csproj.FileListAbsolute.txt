@@ -1,0 +1,17 @@
+D:\Code\C#\ConsoleApp1\textEditor\bin\Debug\net6.0\textEditor.exe
+D:\Code\C#\ConsoleApp1\textEditor\bin\Debug\net6.0\textEditor.deps.json
+D:\Code\C#\ConsoleApp1\textEditor\bin\Debug\net6.0\textEditor.runtimeconfig.json
+D:\Code\C#\ConsoleApp1\textEditor\bin\Debug\net6.0\textEditor.dll
+D:\Code\C#\ConsoleApp1\textEditor\bin\Debug\net6.0\textEditor.pdb
+D:\Code\C#\ConsoleApp1\textEditor\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.csproj.AssemblyReference.cache
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.AssemblyInfoInputs.cache
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.AssemblyInfo.cs
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.csproj.CoreCompileInputs.cache
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.csproj.CopyComplete
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.dll
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\refint\textEditor.dll
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.pdb
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\textEditor.genruntimeconfig.cache
+D:\Code\C#\ConsoleApp1\textEditor\obj\Debug\net6.0\ref\textEditor.dll
