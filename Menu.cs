@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
@@ -103,9 +104,6 @@ namespace textEditor
                 case ConsoleKey.LeftArrow:
                     Console.CursorLeft = Console.CursorLeft + -1;
                     break;
-                case ConsoleKey.Delete:
-
-                    break;
                 default:
                     editor(consoleKey);
                     x = Console.CursorLeft;
@@ -116,25 +114,44 @@ namespace textEditor
         }
         private void editor (ConsoleKey consoleKey)
         {
+            char[] fabric = new char[256];
+            string s;
+
             if (Console.CursorTop -3 <= strings.Length)
             {
-                string s = strings[Console.CursorTop - 2];
-                List<char> list = new List<char>();
+                s = strings[Console.CursorTop - 2];
                 for (int i = 0; i < s.Length; i++)
                 {
-                    list.Add(Convert.ToChar(s[i]));
+                    fabric[i] = Convert.ToChar(s[i]);
                 }
-                if (Console.CursorLeft <= list.Count)
+                if (Console.CursorLeft < fabric.Length)
                 {
-                    list[Console.CursorLeft] = Convert.ToChar(consoleKey);
+                    if (consoleKey == ConsoleKey.Delete)
+                    {
+                        fabric = deleter(fabric, Console.CursorLeft);
+                    }
+                    fabric[Console.CursorLeft] = Convert.ToChar(consoleKey);
                 }
                 s = "";
-                foreach (char c in list)
+                foreach (char c in fabric)
                 {
                     s = s + c;
                 }
                 strings[Console.CursorTop - 2] = s;
             }
+        }
+
+        private char[] deleter(char[] old, int index)
+        {
+            char[] result = new char[256];
+            for(int i = 0; i < old.Length; i++)
+            {
+                if(i != index)
+                {
+                    result[i] = old[i];
+                }
+            }
+            return result;
         }
     }
 }
