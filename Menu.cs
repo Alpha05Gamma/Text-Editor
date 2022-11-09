@@ -143,12 +143,21 @@ namespace textEditor
 
         private char[] deleter(char[] old, int index)
         {
+            int n = 0;
+            
             char[] result = new char[256];
             for(int i = 0; i < old.Length; i++)
             {
                 if(i != index)
                 {
-                    result[i] = old[i];
+                    result[n] = old[i];
+                    n++;
+                }
+                else
+                {
+                    i++;
+                    result[n] = old[i];
+                    n++;
                 }
             }
             return result;
